@@ -2,9 +2,10 @@ import { Link } from "react-router-dom"
 
 function NavBar(){
     return (
-        <nav className="navbar">
-            <Link to="/" className="btn btn-dark">Home</Link>
-            <Link to="/about" className="btn btn-dark">About Me</Link>
+        <nav className="nav justify-content-center nav-tabs">
+            <Link to="/" className="btn btn-dark m-auto">Home</Link>
+            <Link to="/about" className="btn btn-dark m-auto">About Me</Link>
+            <Link to="/login" className="btn btn-dark m-auto">Login</Link>
         </nav>
     )
 }
