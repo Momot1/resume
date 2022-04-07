@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div className="App">
+    <div className="container justify-content-center">
       <header className="App-header">
         <h1>YOOOOOOOOOOOOO</h1>
         <h1>THIS IS MARK MOMOT'S WEBSITE</h1>
