@@ -1,13 +1,20 @@
+import React from "react";
+import { BrowserRouter, Switch , Route } from "react-router-dom"
+import NavBar from "./NavBar"
+import Home from "./Home"
+import About from "./About";
+
 function App() {
   return (
-    <div className="container justify-content-center">
-      <header className="App-header">
-        <h1>YOOOOOOOOOOOOO</h1>
-        <h1>THIS IS MARK MOMOT'S WEBSITE</h1>
-        <h4>About Me</h4>
-        <p>My name is Mark Momot, I am 21 years old, and I am an aspiring software developer. This website demonstrates not only who I am, but my skills as a developer.</p>
-      </header>
-    </div>
+    <BrowserRouter>
+      <NavBar />
+
+      <Switch>
+        <Route exact path="/"><Home /></Route>
+        <Route path="/about"><About /></Route>
+        <Route path="/"><h1>404 NOT FOUND</h1></Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
