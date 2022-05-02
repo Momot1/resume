@@ -4,6 +4,7 @@ import NavBar from "./NavBar"
 import Home from "./Home"
 import About from "./About";
 import Login from "./Login";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/"><Home /></Route>
         <Route path="/about"><About /></Route>
         <Route path="/login"><Login /></Route>
+        <Route path="/contact"><Contact /></Route>
         <Route path="/"><h1>404 NOT FOUND</h1></Route>
       </Switch>
     </BrowserRouter>
