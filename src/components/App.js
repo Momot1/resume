@@ -6,8 +6,15 @@ import About from "./About";
 import Login from "./Login";
 import Contact from "./Contact";
 import Signup from "./Signup";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    fetch("http://markmomotbackend.herokuapp.com")
+    .then(resp => resp.json())
+    .then(console.log())
+  }, [])
+
   return (
     <BrowserRouter>
       <NavBar />
