@@ -21,7 +21,7 @@ function Signup(){
                 <input type="password" placeholder="Password"/><br/>
                 <label>Confirm Password: </label>
                 <input type="password" placeholder="Confirm Password"/><br/>
-                <button type="submit">Sign Up</button>
+                <button type="submit">Sign Up</button><br/>
                 <Link to="/login">Already have an account? Login</Link>
             </form>
         </div>

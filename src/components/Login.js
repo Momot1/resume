@@ -13,7 +13,7 @@ function Login(){
                 <input type="text" /><br/>
                 <label>Password: </label>
                 <input type="password" />
-                <button type="submit" >Login</button>
+                <button type="submit" >Login</button><br/>
                 <Link to="/signup">Don't have an account? Sign Up</Link>
             </form>
         </div>
