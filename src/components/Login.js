@@ -1,17 +1,21 @@
-import { useEffect } from "react"
+import { Link } from "react-router-dom"
 
 function Login(){
 
-    useEffect(() => {
-        fetch("https://markmomotbackend.herokuapp.com/birds")
-        .then(r => r.json())
-        .then(console.log)
-    }, [])
-
+    function onLogin(e){
+        e.preventDefault()
+    }
 
     return (
         <div>
-            <h1>Login</h1>
+            <form onSubmit={onLogin}>
+                <label>Username: </label>
+                <input type="text" /><br/>
+                <label>Password: </label>
+                <input type="password" />
+                <button type="submit" >Login</button>
+                <Link to="/signup">Don't have an account? Sign Up</Link>
+            </form>
         </div>
     )
 }
