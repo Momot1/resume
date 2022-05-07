@@ -10,7 +10,7 @@ import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    fetch("http://markmomotbackend.herokuapp.com")
+    fetch("https://markmomotbackend.herokuapp.com")
     .then(resp => resp.json())
     .then(console.log())
   }, [])
