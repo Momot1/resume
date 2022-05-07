@@ -13,6 +13,7 @@ function App() {
     fetch("https://markmomotbackend.herokuapp.com")
     .then(resp => resp.json())
     .then(console.log())
+    .catch(console.log())
   }, [])
 
   return (
