@@ -14,7 +14,7 @@ function Signup(){
     function onSignup(e){
         e.preventDefault()
 
-        fetch("https://markmomotbackend.herokuapp.com/", {
+        fetch("https://markmomotbackend.herokuapp.com/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
