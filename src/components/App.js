@@ -6,7 +6,7 @@ import About from "./About";
 import Login from "./Login";
 import Contact from "./Contact";
 import Signup from "./Signup";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 
 function App() {
   const [user, setUser] = useState(null)
