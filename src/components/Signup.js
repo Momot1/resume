@@ -16,6 +16,7 @@ function Signup({setUser}){
 
         fetch("https://markmomotbackend.herokuapp.com/signup", {
             method: "POST",
+            mode: "cors",
             headers: {
                 "Content-Type": "application/json"
             },
