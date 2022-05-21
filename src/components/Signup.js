@@ -22,7 +22,7 @@ function Signup(){
             body: JSON.stringify(formData)
         })
         .then(resp => resp.json())
-        .then(console.log()) 
+        .then(setUser) 
         
     }
 
